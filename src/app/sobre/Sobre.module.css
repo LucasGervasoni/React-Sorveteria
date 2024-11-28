@@ -1,0 +1,115 @@
+/*Define como vai se comportorar todo o conteudo principal*/
+.main{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+/*Define os estilos para a área da capa, usando uma imagem como background
+ para poder ser sobreposta por um titulo. Também foi aplicado o flexbox para ajustar
+ o alinhamento dos elementos*/
+.container_capa{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url('../../../public/banner-sobre.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+/*Define a cor do texto do titulo, o tamanho da fonte e a sombra no texto*/
+.container_capa h1{
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 3px 5px 2px #000;
+}
+
+.container_sobre{
+    max-width: 1024px;
+    text-align: center;
+    padding: 100px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sobre_subtitulo_slogan h4{
+    font-style: italic;
+}
+
+
+.container_cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_imagem{
+    height: 500px;
+    width: 50%;
+}
+
+.sobre_imagem{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Telas até 1024px*/
+@media(max-width: 1024px){
+    
+    .card_imagem{
+        height: 400px;
+    }
+
+}
+
+
+/*Telas até 768px*/
+@media(max-width: 768px){
+
+    .container_capa h1{
+        font-size: 56px;
+    }
+    
+    .container_cards{
+        flex-direction: column;
+    }
+
+    .card_imagem{
+        height: 500px;
+        width: 100%;
+    }
+
+}
+
+
+/*Telas até 375px*/
+@media(max-width: 375px){
+
+    .container_capa h1{
+        font-size: 42px;
+    }
+
+    .card_imagem{
+        height: 300px;
+    }
+
+}
