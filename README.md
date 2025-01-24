@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/31a13a88-e644-4c45-b222-b35271a11e9c)
+
+![Gelateria](https://github.com/user-attachments/assets/61730c85-9d8d-4a20-b8cd-b949b4728577)
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
